@@ -9,10 +9,7 @@ public class CameraMovement : MonoBehaviour
     public
      Transform playerBody;
     float xRotation = 0f;
-    public Transform groundcheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
-    bool isGrounded;
+  
 
 
  
