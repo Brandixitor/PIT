@@ -16,9 +16,6 @@ public class PlayerMovement : MonoBehaviour
     public float jumpHeight = 3f;
 
     
-
-
-    
     void Update()
     {
 
