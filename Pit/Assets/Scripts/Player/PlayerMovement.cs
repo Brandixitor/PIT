@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
  public float speed = 12f;
  public float gravity = -9.81f;
  Vector3 velocity;
-   public Transform groundcheck;
+   public Transform groundCheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     bool isGrounded;
@@ -18,8 +18,15 @@ public class PlayerMovement : MonoBehaviour
 
 
     
-    void FixedUpdate()
+    void Update()
     {
+
+        isGrounded = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        if (isGrounded && velocity.y < 0)
+        {
+            velocity.y = -2f;
+        }
+
         //Taking input from the keyboard.
        float x = Input.GetAxis("Horizontal");
        float z = Input.GetAxis("Vertical");
