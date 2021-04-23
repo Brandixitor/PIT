@@ -9,3 +9,4 @@ Also, work on the advanced movement system including crouching and sprinting. </
 
 
 - 23/04/2021 - Finished working the mouse Y Axis. </br>
+Added gravity physics to the player movements. </br>
